@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Localization;
 using Microsoft.EntityFrameworkCore;
+using SalesWebMvc.Services;
 using SalesWebMVC.Data;
 using SalesWebMVC.Data.Models;
 using SalesWebMVC.Services;
@@ -15,6 +16,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<SeedingService>();
 builder.Services.AddScoped<SellerService>();
 builder.Services.AddScoped<DepartmentService>();
+builder.Services.AddScoped<SalesRecordService>();
 
 var app = builder.Build();
 
